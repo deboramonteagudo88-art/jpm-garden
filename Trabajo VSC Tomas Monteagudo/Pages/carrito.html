@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos para piscinas y servicios de JPM Garden.">
+    <title>Productos y servicios | JPM Garden</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="../Js/carrito.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="../index.html" class="logo">JPM <span>GARDEN.</span></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./carrito.html" class="activo">Productos y servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="https://wa.me/5491141702978" class="nav-cta" target="_blank" rel="noopener noreferrer">Consultar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <span class="etiqueta">JPM GARDEN</span>
+            <h1>Productos y servicios</h1>
+            <p>Todo lo que necesitás para cuidar tu jardín y piscina.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <h2 class="titulo-seccion">Productos para piscinas</h2>
+
+            <div class="grilla-items">
+
+                <article class="tarjeta">
+                    <h3>Cloro líquido (Bidón 10L)</h3>
+                    <p>Producto para el tratamiento y desinfección del agua.</p>
+                    <span class="precio">$15.000</span>
+                    <button type="button" data-nombre="Cloro líquido 10L" data-precio="15000">
+                        Agregar al carrito
+                    </button>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Clarificador (2 litros)</h3>
+                    <p>Ayuda a agrupar partículas en suspensión para facilitar su eliminación.</p>
+                    <span class="precio">$10.000</span>
+                    <button type="button" data-nombre="Clarificador 2L" data-precio="10000">
+                        Agregar al carrito
+                    </button>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Pastillas triple acción (1 kg)</h3>
+                    <p>Producto multifunción para el mantenimiento del agua.</p>
+                    <span class="precio">$15.000</span>
+                    <button type="button" data-nombre="Pastillas triple acción 1kg" data-precio="15000">
+                        Agregar al carrito
+                    </button>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Cloro en polvo (1 kg)</h3>
+                    <p>Producto para el tratamiento del agua de piscinas.</p>
+                    <span class="precio">$15.000</span>
+                    <button type="button" data-nombre="Cloro en polvo 1kg" data-precio="15000">
+                        Agregar al carrito
+                    </button>
+                </article>
+
+            </div>
+
+            <h2 class="titulo-seccion">Servicios profesionales</h2>
+
+            <div class="grilla-items">
+
+                <article class="tarjeta servicio">
+                    <h3>Mantenimiento de jardines y piscinas</h3>
+                    <p>Corte de césped, limpieza de fondo, barrefondo y mantenimiento general.</p>
+                    <span class="precio">A cotizar</span>
+                    <button type="button" data-nombre="Mantenimiento de jardines y piscinas" data-precio="0">
+                        Solicitar servicio
+                    </button>
+                </article>
+
+                <article class="tarjeta servicio">
+                    <h3>Podas en altura</h3>
+                    <p>Poda de árboles y palmeras. Trabajos sujetos a evaluación previa.</p>
+                    <span class="precio">A cotizar</span>
+                    <button type="button" data-nombre="Podas en altura" data-precio="0">
+                        Solicitar servicio
+                    </button>
+                </article>
+
+                <article class="tarjeta servicio">
+                    <h3>Arreglo de bombas</h3>
+                    <p>Revisión, reparación y mantenimiento de bombas de piscinas.</p>
+                    <span class="precio">A cotizar</span>
+                    <button type="button" data-nombre="Arreglo de bombas" data-precio="0">
+                        Solicitar servicio
+                    </button>
+                </article>
+
+                <article class="tarjeta servicio">
+                    <h3>Puesta a punto</h3>
+                    <p>Limpieza profunda y recuperación de piscinas.</p>
+                    <span class="precio">A cotizar</span>
+                    <button type="button" data-nombre="Puesta a punto" data-precio="0">
+                        Solicitar servicio
+                    </button>
+                </article>
+
+                <article class="tarjeta servicio">
+                    <h3>Control de plagas</h3>
+                    <p>Tratamientos para el cuidado de plantas y césped.</p>
+                    <span class="precio">A cotizar</span>
+                    <button type="button" data-nombre="Control de plagas" data-precio="0">
+                        Solicitar servicio
+                    </button>
+                </article>
+
+            </div>
+
+            <section class="resumen-carrito" id="mi-carrito">
+                <h2>🛒 Tu carrito de pedido</h2>
+
+                <ul id="lista-carrito">
+                    <li class="vacio">Todavía no agregaste productos ni servicios.</li>
+                </ul>
+
+                <div class="total-contenedor">
+                    <strong>Total estimado: $<span id="total-precio">0</span></strong>
+
+                    <div class="botones-carrito">
+                        <button type="button" class="btn-vaciar" id="vaciar-carrito">
+                            Vaciar carrito
+                        </button>
+
+                        <button type="button" class="btn-finalizar" id="confirmar-pedido">
+                            Confirmar pedido
+                        </button>
+                    </div>
+                </div>
+
+                <form id="formulario-pedido" class="formulario-contacto" hidden>
+                    <h3>Datos para tu pedido</h3>
+
+                    <div class="campo">
+                        <label for="nombre-pedido">Nombre y apellido</label>
+                        <input type="text" id="nombre-pedido" required maxlength="100" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label for="celular-pedido">Celular</label>
+                        <input type="tel" id="celular-pedido" required maxlength="30" placeholder="11 1234 5678">
+                    </div>
+
+                    <div class="campo">
+                        <label for="zona-pedido">Localidad o zona</label>
+                        <input type="text" id="zona-pedido" required maxlength="100" placeholder="Tu localidad">
+                    </div>
+
+                    <button type="submit" class="btn btn-verde" style="width:100%">
+                        Enviar pedido por WhatsApp
+                    </button>
+                </form>
+            </section>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>JPM GARDEN</strong></p>
+    <p>Cuidamos tus espacios, cuidamos cada detalle.</p>
+    <p>© 2026 JPM Garden. Todos los derechos reservados.</p>
+</footer>
+
+<a href="https://wa.me/5491141702978" class="btn-whatsapp-flotante"
+   target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2.93c-7.21 0-13.07 5.86-13.07 13.07 0 2.3.6 4.55 1.74 6.53L2.8 29.2l6.85-1.8c1.92 1.05 4.09 1.6 6.35 1.6 7.21 0 13.07-5.86 13.07-13.07S23.21 2.93 16 2.93zm0 23.86c-1.96 0-3.88-.53-5.56-1.52l-.4-.24-4.13 1.08 1.1-4.02-.26-.41a10.82 10.82 0 0 1-1.66-5.78c0-5.98 4.87-10.85 10.85-10.85 5.98 0 10.85 4.87 10.85 10.85 0 5.98-4.87 10.85-10.85 10.85z"/>
+    </svg>
+</a>
+
+</body>
+</html>

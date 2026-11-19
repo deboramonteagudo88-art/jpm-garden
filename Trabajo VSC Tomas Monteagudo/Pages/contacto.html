@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con JPM Garden para solicitar presupuestos de jardinería y piscinas.">
+    <title>Contacto | JPM Garden</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="../Js/contacto.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="../index.html" class="logo">JPM <span>GARDEN.</span></a>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./carrito.html">Productos y servicios</a></li>
+                <li><a href="./contacto.html" class="activo">Contacto</a></li>
+                <li><a href="https://wa.me/5491141702978" class="nav-cta" target="_blank" rel="noopener noreferrer">Consultar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <span class="etiqueta">ESTAMOS PARA AYUDARTE</span>
+            <h1>Hablemos de tu proyecto</h1>
+            <p>Contanos qué necesitás y nos pondremos en contacto.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Solicitá tu presupuesto</h2>
+                <p>Completá el formulario y envianos tu consulta por WhatsApp.</p>
+            </div>
+
+            <form class="formulario-contacto" id="formulario-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" maxlength="100"
+                           placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" maxlength="30"
+                           placeholder="Ej. 11 2345 6789" required>
+                </div>
+
+                <div class="campo">
+                    <label for="gmail">Correo electrónico</label>
+                    <input type="email" id="gmail" maxlength="150"
+                           placeholder="Ej. usuario@gmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="zona">Localidad o zona</label>
+                    <input type="text" id="zona" maxlength="100"
+                           placeholder="Ej. San Isidro" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">¿En qué podemos ayudarte?</label>
+                    <textarea id="mensaje" rows="5" maxlength="1000"
+                              placeholder="Contanos qué servicio necesitás..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-verde btn-enviar">
+                    Enviar consulta por WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Preferís escribirnos directamente?</h2>
+            <p>También podés comunicarte con nosotros por WhatsApp.</p>
+
+            <a href="https://wa.me/5491141702978"
+               class="btn btn-lima"
+               target="_blank" rel="noopener noreferrer">
+                Contactar ahora
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>JPM GARDEN</strong></p>
+    <p>Cuidamos tus espacios, cuidamos cada detalle.</p>
+    <p>© 2026 JPM Garden. Todos los derechos reservados.</p>
+</footer>
+
+<a href="https://wa.me/5491141702978"
+   class="btn-whatsapp-flotante"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2.93c-7.21 0-13.07 5.86-13.07 13.07 0 2.3.6 4.55 1.74 6.53L2.8 29.2l6.85-1.8c1.92 1.05 4.09 1.6 6.35 1.6 7.21 0 13.07-5.86 13.07-13.07S23.21 2.93 16 2.93zm0 23.86c-1.96 0-3.88-.53-5.56-1.52l-.4-.24-4.13 1.08 1.1-4.02-.26-.41a10.82 10.82 0 0 1-1.66-5.78c0-5.98 4.87-10.85 10.85-10.85 5.98 0 10.85 4.87 10.85 10.85 0 5.98-4.87 10.85-10.85 10.85z"/>
+    </svg>
+</a>
+
+</body>
+</html>
